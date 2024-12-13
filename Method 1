@@ -1,0 +1,32 @@
+#include
+
+int main()
+{ int i,j,a=1,c,n;
+printf(“enter no of rows”);
+scanf(“%d”,&n);
+for(i=0;i<n;i++)
+{ if(i<n/2)
+{ c=a;
+for(j=0;j<=i;j++)
+{ c++;}
+a=c;
+for(j=0;j<=i;j++)
+{
+printf("%d",c);
+c–; }
+
+printf("\n");
+}
+else
+{ c=a;
+for(j=0;j<n-i;j++)
+{
+printf("%d",c);
+c–;
+}
+a=a-(n-i);
+printf("\n");
+}
+}
+return 0;
+}
